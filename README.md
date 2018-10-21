@@ -11,10 +11,11 @@ Given a file location, the program should validate the filename. If the file is 
     - It will print success message if the filename is valid or print an error message if the file name is invalid along with error details.
 
 2. Run using JUnit
+	- Run Maven clean + install and ensure build is successful
     - Run FileValidaterTest.java as JUnit Test with pre-written test cases
     - All the JUnit tests should pass
     
-#### Solutions:
+#### Solution:
 - Get the input and split it into 2 parts with file extension and filename
 - Split the filename in to 4 parts to ensure that it has all the required parts to match with the given format
 - Validate each part to match expected string or format
@@ -23,8 +24,8 @@ Given a file location, the program should validate the filename. If the file is 
 	- third part of filename should be date in format of 'ddmmyyyy'
 	- fourth part of filename should be sequence number that only accept 2 digit number
 	
-#### Assumptions:
+#### Assumption:
 - Only filename string is passed to method for validations
 
-#### Enhancements:
+#### Enhancement:
 - To accept file objects or full file path
